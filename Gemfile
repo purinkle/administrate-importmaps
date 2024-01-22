@@ -45,6 +45,7 @@ group :development, :test do
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
   gem 'rubocop-rubycw', require: false
+  gem 'rubycritic', require: false
 end
 
 group :development do

@@ -87,7 +87,15 @@ GEM
     bindex (0.8.1)
     bootsnap (1.17.1)
       msgpack (~> 1.2)
+    brakeman (6.1.1)
+      racc
     builder (3.2.4)
+    bundle-audit (0.1.0)
+      bundler-audit
+    bundler-audit (0.9.1)
+      bundler (>= 1.2.0, < 3)
+      thor (~> 1.0)
+    bundler-integrity (1.0.9)
     capybara (3.39.2)
       addressable
       matrix
@@ -155,6 +163,10 @@ GEM
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     ice_nine (0.11.2)
+    importmap-rails (2.0.1)
+      actionpack (>= 6.0.0)
+      activesupport (>= 6.0.0)
+      railties (>= 6.0.0)
     io-console (0.7.2)
     irb (1.11.1)
       rdoc
@@ -359,9 +371,13 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  brakeman
+  bundle-audit
+  bundler-integrity
   capybara
   cssbundling-rails
   debug
+  importmap-rails (~> 2.0)
   pg (~> 1.1)
   propshaft
   puma (>= 5.0)

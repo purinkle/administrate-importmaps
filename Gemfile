@@ -38,6 +38,9 @@ gem 'bootsnap', require: false
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
+  gem 'brakeman'
+  gem 'bundle-audit', require: false
+  gem 'bundler-integrity', require: false
   gem 'debug', platforms: %i(mri windows)
   gem 'rubocop', require: false
   gem 'rubocop-capybara', require: false
@@ -64,3 +67,5 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
 end
+
+gem 'importmap-rails', '~> 2.0'

@@ -92,4 +92,6 @@ Rails.application.configure do
   # config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
 
   config.active_record.strict_loading_by_default = true
+
+  config.sandbox_by_default = true
 end
